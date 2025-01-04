@@ -6,3 +6,64 @@
 cd /extdisks/sda1
 
 mtd -r write breed-mt7620-xiaomi-mini.bin Bootloader
+
+
+
+Example.log
+:/ $ ip link/ether AC:C1:EE:4B:92:AB brd ab:c1:dd:5b:87:db
+Object "link/ether" is unknown, try "ip help".
+1|:/ $ su
+:/ # ifconfing wlan0 hw ether AC:C1:EE:4B:92:AB
+/system/bin/sh: ifconfing: inaccessible or not found
+127|:/ # ifconfig wanl0 hw ether AC:C1:EE:4B:92:AB
+ifconfig: ioctl 8924: No such device
+1|:/ # ifconfig ether0 hw ether AC:C1:EE:4B:92:AB
+ifconfig: ioctl 8924: No such device
+1|:/ # ip link
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: dummy0: <BROADCAST,NOARP,UP,LOWER_UP> mtu 1500 qdisc noqueue state UNKNOWN mode DEFAULT group default
+    link/ether 8a:90:ef:79:15:3e brd ff:ff:ff:ff:ff:ff
+3: sit0: <NOARP> mtu 1480 qdisc noop state DOWN mode DEFAULT group default
+    link/sit 0.0.0.0 brd 0.0.0.0
+4: rmnet_ipa0: <UP,LOWER_UP> mtu 2000 qdisc pfifo_fast state UNKNOWN mode DEFAULT group default qlen 1000
+    link/[530]
+5: rmnet_data0: <> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/[530]
+6: rmnet_data1: <> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/[530]
+7: rmnet_data2: <> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/[530]
+8: rmnet_data3: <> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/[530]
+9: rmnet_data4: <> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/[530]
+10: rmnet_data5: <> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/[530]
+11: rmnet_data6: <> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/[530]
+12: rmnet_data7: <> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/[530]
+13: r_rmnet_data0: <> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/[530]
+14: r_rmnet_data1: <> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/[530]
+15: r_rmnet_data2: <> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/[530]
+16: r_rmnet_data3: <> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/[530]
+17: r_rmnet_data4: <> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/[530]
+18: r_rmnet_data5: <> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/[530]
+19: r_rmnet_data6: <> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/[530]
+20: r_rmnet_data7: <> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/[530]
+21: r_rmnet_data8: <> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/[530]
+22: wlan0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP mode DORMANT group default qlen 1000
+    link/ether ac:c1:ee:4b:92:ab brd ff:ff:ff:ff:ff:ff
+23: p2p0: <BROADCAST,MULTICAST> mtu 1500 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/ether ae:c1:ee:4b:92:ab brd ff:ff:ff:ff:ff:ff
+:/ #
