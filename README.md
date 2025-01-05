@@ -8,6 +8,8 @@ cd /extdisks/sda1
 mtd -r write breed-mt7620-xiaomi-mini.bin Bootloader
 
 # Example.log
+https://github.com/cuongio/XiaomiWifiMini/blob/main/Example.log
+
 # video hướng dẫn:
 https://youtu.be/7fLMa8oBAaI?si=m37whhOsrmvb15Qk
 
