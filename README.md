@@ -10,3 +10,6 @@ mtd -r write breed-mt7620-xiaomi-mini.bin Bootloader
 # Example.log
 # video hướng dẫn:
 https://youtu.be/7fLMa8oBAaI?si=m37whhOsrmvb15Qk
+
+# tải breedweb mới nhất cho xiaomi mini
+https://breed.hackpascal.net/breed-mt7620-xiaomi-mini.bin
