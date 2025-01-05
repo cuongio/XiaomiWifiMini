@@ -13,3 +13,6 @@ https://youtu.be/7fLMa8oBAaI?si=m37whhOsrmvb15Qk
 
 # tải breedweb mới nhất cho xiaomi mini
 https://breed.hackpascal.net/breed-mt7620-xiaomi-mini.bin
+
+# tải padavan firmware mới nhất 
+https://opt.cn2qq.com/padavan/
